@@ -1,58 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dagmawi Portfolio - V1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagmawi Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-    <h1>Dagmawi Wondwosen</h1>
-    <p>Software Engineering Student</p>
-    <button onclick="toggleDark()">Toggle Dark Mode</button>
-</header>
+<!-- BACKGROUND SHAPES -->
+<div class="bg-shape shape1"></div>
+<div class="bg-shape shape2"></div>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        Motivated 3rd-year Software Engineering student passionate about building real-world solutions and exploring AI-driven products.
-    </p>
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">Dagmawi</h2>
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+    <div class="hero-left">
+        <h3>Hello, It's Me</h3>
+        <h1>Dagmawi Wondwosen</h1>
+        <h2>And I'm a <span class="highlight">Web Developer</span></h2>
+
+        <p>
+            I build practical web applications and data-driven systems that solve real-world problems.
+        </p>
+
+        <!-- SOCIAL -->
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <!-- DOWNLOAD CV (FIXED) -->
+        <a href="Dagmawi_CV.pdf" download class="btn">Download CV</a>
+    </div>
+
+    <div class="hero-right">
+        <div class="image-box">
+            <img src="images/profile.jpg" alt="Profile">
+        </div>
+    </div>
+
 </section>
 
-<section>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am a motivated and forward-thinking Software Engineering student at Adama Science and Technology University. 
+        I focus on building practical systems such as task managers, chat applications, and data-driven platforms that solve real-world problems.
+        <br><br>
+        Beyond technical skills, I bring strong leadership and communication experience, allowing me to work effectively in teams and deliver meaningful results.
+    </p>
+
+    <div class="stats">
+        <div><h3>3+</h3><p>Years Experience</p></div>
+        <div><h3>5+</h3><p>Projects</p></div>
+        <div><h3>5+</h3><p>Leadership Roles</p></div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
     <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Student Feedback System</h3>
-        <p>Platform to collect and analyze student feedback.</p>
-    </div>
+    <div class="project-grid">
+        <div class="card">
+            <h3>Student Feedback System</h3>
+            <p>Platform for collecting and analyzing student feedback.</p>
+        </div>
 
-    <div class="project">
-        <h3>Task Manager</h3>
-        <p>CRUD application with user authentication.</p>
-    </div>
+        <div class="card">
+            <h3>Task Manager</h3>
+            <p>CRUD application with authentication.</p>
+        </div>
 
-    <div class="project">
-        <h3>Chat Application</h3>
-        <p>Real-time chat system with private messaging.</p>
+        <div class="card">
+            <h3>Chat Application</h3>
+            <p>Real-time messaging system.</p>
+        </div>
     </div>
-
 </section>
 
-<section>
+<!-- SKILLS -->
+<section id="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>HTML & CSS</li>
-        <li>Leadership</li>
-    </ul>
+
+    <div class="skills-grid">
+        <div class="card">
+            <h3>Technical</h3>
+            <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Databases</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Professional</h3>
+            <ul>
+                <li>Leadership</li>
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<section>
+<!-- CONTACT -->
+<section id="contact">
     <h2>Contact</h2>
     <p>Email: dagiwon66@gmail.com</p>
+    <p>Phone: +251 967-6632-26</p>
+    <p>Location: Adama, Ethiopia</p>
 </section>
+
+<footer>
+    <p>© 2026 Dagmawi</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
